@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding: 50px 0px;
 }
 
 .container {
@@ -11,10 +12,12 @@
   height: 100%;
   margin: 0 auto;
   max-width: 768px;
+  padding: 0px 20px;
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
+    padding: 0;
   }
 }
