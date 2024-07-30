@@ -5,6 +5,7 @@
   --color-hover: #1c56ad;
   --white: #f1f1f1;
   --black: #1b1b1b;
+  --grey: #8a8a8a;
 
   font-size: 16px;
 }
@@ -36,9 +37,16 @@ menu {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
   display: block;
   object-fit: cover;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }

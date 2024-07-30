@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.button span {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--color);
+  transition: 0.4s;
+  z-index: 0;
+  border-radius: 500px;
+  left: 50%;
+  top: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.button:hover {
+  color: var(--white);
+}
+
+.button:hover:before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
