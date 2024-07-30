@@ -12,7 +12,7 @@
     <!--============ HEADER =============-->
     <header class="header">
       <a href="./" class="logo">
-        <i class="fa-solid fa-bookmark"></i>
+        <i class="fa-solid fa-graduation-cap"></i>
         <p class="logo__title">Quiz App</p>
       </a>
     </header>
@@ -26,34 +26,58 @@
           <ul class="cards">
             <!--=== Card 1 ===-->
             <li class="card">
-              <button class="add-to-bookmark add-to-bookmark--active">
-                <i class="fa-solid fa-bookmark"></i>
-              </button>
-              <h2 class="card__question">
-                How do I list the contents of a directory?
-              </h2>
-              <button class="button"><span>Show Answer</span></button>
-              <p class="card__answer">ls</p>
-              <ul class="categories">
-                <li>WSL</li>
-                <li>Terminal</li>
-                <li>Commands</li>
-              </ul>
+              <article class="flip">
+                <div class="flip__front">
+                  <button class="add-to-bookmark add-to-bookmark--active">
+                    <i class="fa-solid fa-bookmark"></i>
+                  </button>
+                  <h2 class="card__question">
+                    How do I list the contents of a directory?
+                  </h2>
+                  <button class="button js-card-show">
+                    <span>Show Answer</span>
+                  </button>
+                  <ul class="categories">
+                    <li>WSL</li>
+                    <li>Terminal</li>
+                    <li>Commands</li>
+                  </ul>
+                </div>
+                <div class="flip__back">
+                  <p class="card__answer">ls</p>
+                  <button class="button js-card-hide">
+                    <span>Hide Answer</span>
+                  </button>
+                </div>
+              </article>
             </li>
 
             <!--=== Card 6 ===-->
             <li class="card">
-              <button class="add-to-bookmark add-to-bookmark--active">
-                <i class="fa-solid fa-bookmark"></i>
-              </button>
-              <h2 class="card__question">How do I create a new directory?</h2>
-              <button class="button"><span>Show Answer</span></button>
-              <p class="card__answer">mkdir &lt;FolderName&gt;</p>
-              <ul class="categories">
-                <li>WSL</li>
-                <li>Terminal</li>
-                <li>Commands</li>
-              </ul>
+              <article class="flip">
+                <div class="flip__front">
+                  <button class="add-to-bookmark add-to-bookmark--active">
+                    <i class="fa-solid fa-bookmark"></i>
+                  </button>
+                  <h2 class="card__question">
+                    How do I create a new directory?
+                  </h2>
+                  <button class="button js-card-show">
+                    <span>Show Answer</span>
+                  </button>
+                  <ul class="categories">
+                    <li>WSL</li>
+                    <li>Terminal</li>
+                    <li>Commands</li>
+                  </ul>
+                </div>
+                <div class="flip__back">
+                  <p class="card__answer">mkdir &lt;FolderName&gt;</p>
+                  <button class="button js-card-hide">
+                    <span>Hide Answer</span>
+                  </button>
+                </div>
+              </article>
             </li>
           </ul>
         </div>

@@ -7,18 +7,16 @@
   align-content: center;
   min-height: 50px;
   color: var(--white);
-  background: var(--color-hover);
-  border-radius: 10px;
-  font-size: 1rem;
+  background: var(--black);
+  border-radius: 30px;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 10px 30px;
+  padding: 8px 20px;
   text-transform: uppercase;
-  transition: 0.4s;
 }
 
 .button span {
   display: block;
-  position: relative;
   z-index: 2;
 }
 
