@@ -2,14 +2,15 @@
 
 :root {
   --color: #14448b;
-  --color-hover: #2765c2;
-  --white: #f1f1f1;
+  --color-hover: #3c7ee2;
+  --background: #f1f1f1;
+  --white: #ffffff;
   --black: #1b1b1b;
   --grey: #a0a0a0;
   --grey-light: #bdbdbd;
 
-  font-size: 16px;
-  line-height: 1.4;
+  /*dark theme*/
+  --background-dark-theme: #3d3d3d;
 }
 
 *,
@@ -20,15 +21,17 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   height: 100%;
-  background: var(--white);
+  background: var(--background);
   color: var(--black);
 
   /*font*/
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 ul,

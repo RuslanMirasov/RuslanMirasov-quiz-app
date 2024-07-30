@@ -1,0 +1,17 @@
+.headline {
+  display: block;
+  font-size: 2.1rem;
+  line-height: 1;
+  font-weight: 700;
+  width: 100%;
+  height: auto;
+}
+
+.headline.headline--h2 {
+  font-size: 1.5rem;
+}
+
+.headline.headline--h3 {
+  text-align: center;
+  font-size: 1.4rem;
+}

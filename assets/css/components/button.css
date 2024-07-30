@@ -3,10 +3,11 @@
   position: relative;
   overflow: hidden;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   align-content: center;
-  color: var(--color);
-  border: 2px solid var(--color);
+  min-height: 50px;
+  color: var(--white);
+  background: var(--color-hover);
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;

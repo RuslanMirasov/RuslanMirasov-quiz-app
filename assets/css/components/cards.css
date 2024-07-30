@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-top: 50px;
 }
 
 .card {
@@ -62,7 +63,7 @@
   color: var(--color);
 }
 
-/*Categories*/
+/*Categories list*/
 
 .categories {
   display: flex;
@@ -79,11 +80,12 @@
 }
 
 .categories li {
-  background: var(--color);
   border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 0.8rem;
-  color: var(--white);
+  padding: 5px 8px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 
 /*MOBIL STYLES*/
@@ -96,13 +98,13 @@
 /*TABLET STYLES*/
 @media (min-width: 768px) and (max-width: 1279px) {
   .card {
-    width: calc(50% - 20px);
+    width: calc(50% - (40px / 2));
   }
 }
 
 /*DESCTOP STYLES*/
 @media (min-width: 1280px) {
   .card {
-    width: calc(33.333333% - 40px);
+    width: calc(33.333333% - 26.666666px);
   }
 }
