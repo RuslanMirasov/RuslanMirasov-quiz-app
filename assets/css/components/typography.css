@@ -11,7 +11,8 @@
   font-size: 1.5rem;
 }
 
-.headline.headline--h3 {
-  text-align: center;
-  font-size: 1.4rem;
+@media (min-width: 768px) {
+  .headline {
+    font-size: 3rem;
+  }
 }

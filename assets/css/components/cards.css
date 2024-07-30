@@ -43,21 +43,20 @@
   display: flex;
   flex-direction: column;
   background: var(--white);
+  min-height: 260px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 .flip__front {
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  min-height: 300px;
-
   position: relative;
-  border-radius: 20px;
   padding: 40px 20px 20px 20px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 2;
 }
@@ -68,17 +67,8 @@
   left: 0px;
   z-index: 1;
   transform: rotateY(180deg);
-
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  min-height: 300px;
-
-  border-radius: 20px;
   padding: 20px 20px 20px 20px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover .flip,
@@ -117,6 +107,7 @@
   max-width: 300px;
   text-align: center;
   font-size: 1.4rem;
+  line-height: 1.2;
 }
 
 .card__answer {
