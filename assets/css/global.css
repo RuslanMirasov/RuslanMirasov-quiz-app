@@ -6,8 +6,10 @@
   --white: #f1f1f1;
   --black: #1b1b1b;
   --grey: #a0a0a0;
+  --grey-light: #bdbdbd;
 
   font-size: 16px;
+  line-height: 1.4;
 }
 
 *,

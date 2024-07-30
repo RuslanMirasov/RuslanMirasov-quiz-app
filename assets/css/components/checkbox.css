@@ -1,0 +1,40 @@
+/*checkbox*/
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox label {
+  width: 46px;
+  height: 20px;
+  background: var(--grey-light);
+  border: 1px solid var(--grey-light);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox label:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 18px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  transform: translate(-13px);
+}
+
+.checkbox input:checked + label {
+  background: var(--color-hover);
+}
+
+.checkbox input:checked + label:before {
+  transform: translate(13px);
+}
