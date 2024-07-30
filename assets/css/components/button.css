@@ -7,7 +7,7 @@
   align-content: center;
   color: var(--color);
   border: 2px solid var(--color);
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 30px;

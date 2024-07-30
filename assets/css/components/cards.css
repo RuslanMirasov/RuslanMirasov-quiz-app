@@ -94,10 +94,10 @@
 }
 
 .categories li {
-  background: var(--black);
+  background: var(--color);
   border-radius: 4px;
-  padding: 4px;
-  font-size: 0.6rem;
+  padding: 4px 6px;
+  font-size: 0.8rem;
   color: var(--white);
 }
 
