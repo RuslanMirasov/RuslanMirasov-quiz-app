@@ -10,13 +10,13 @@
   height: 100%;
 }
 
-.navigation__menu-item {
+.navigation__item {
   display: block;
   height: 100%;
   width: 33.333333%;
 }
 
-.navigation__menu-item a {
+.navigation__item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,8 @@
   transition: 0.3s;
 }
 
-.navigation__menu-item a:hover,
-.navigation__menu-item a:focus {
+.navigation__item.navigation__item--active a,
+.navigation__item a:hover,
+.navigation__item a:focus {
   background: var(--color-hover);
 }
