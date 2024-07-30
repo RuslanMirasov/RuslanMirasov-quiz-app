@@ -1,13 +1,13 @@
 const refs = {
-  cards: document.querySelector(".cards"),
   body: document.querySelector(".body"),
   themeSwitcher: document.querySelector("#theme-switcher"),
+  cards: document.querySelector(".cards"),
 };
 
 const switchThema = (e) => {
   const newTheme = e.target.checked ? "dark" : "light";
-  localStorage.setItem("theme", newTheme);
   refs.body.dataset.theme = newTheme;
+  localStorage.setItem("theme", newTheme);
 };
 
 const themeInit = () => {

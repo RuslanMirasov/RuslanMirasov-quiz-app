@@ -33,6 +33,7 @@
 
 .checkbox input:checked + label {
   background: var(--color);
+  border: 1px solid var(--color);
 }
 
 .checkbox input:checked + label:before {

@@ -1,3 +1,47 @@
 .body[data-theme="dark"] {
   background: var(--background-dark-theme);
+  color: var(--white);
+}
+
+.body[data-theme="dark"] .profile__content {
+  background: var(--background-card-dark-theme);
+  border: 1px solid var(--grey-dark-theme);
+}
+
+.body[data-theme="dark"] .profile .headline--h2 {
+  border-bottom: 1px solid var(--grey-dark-theme);
+}
+
+.body[data-theme="dark"] .profile p {
+  opacity: 0.6;
+}
+
+.body[data-theme="dark"] .profile__counter {
+  color: var(--white);
+}
+
+.body[data-theme="dark"] .profile__counter span {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.body[data-theme="dark"] .flip__front,
+.body[data-theme="dark"] .flip__back {
+  background: var(--background-card-dark-theme);
+  border: 1px solid var(--grey-dark-theme);
+}
+
+.body[data-theme="dark"] .button {
+  color: var(--black);
+  background: var(--white);
+}
+
+.body[data-theme="dark"] .button:hover {
+  color: var(--white);
+}
+
+.body[data-theme="dark"] .categories li {
+  color: var(--white);
+  border: 1px solid var(--color);
+  background: var(--color);
 }
