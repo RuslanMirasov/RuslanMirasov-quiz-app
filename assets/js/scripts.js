@@ -1,7 +1,20 @@
 const refs = {
   body: document.querySelector(".body"),
+  templates: document.querySelectorAll("link[rel=import]"),
   themeSwitcher: document.querySelector("#theme-switcher"),
   cards: document.querySelector(".cards"),
+};
+
+const templatesInit = () => {
+  refs.templates.forEach((template) => {
+    const templateHref = template.getAttribute("href");
+    if (templateHref) {
+      fetch(templateHref)
+        .then((response) => response.text())
+        .then((data) => refs.body.insertAdjacentHTML("beforeend", data))
+        .catch((error) => console.error("Error loading template:", error));
+    }
+  });
 };
 
 const switchThema = (e) => {
@@ -34,13 +47,14 @@ const flipCard = (e) => {
   card.classList.remove("active");
 };
 
-const flipCrdInit = () => {
+const flipCardInit = () => {
   if (refs.cards) {
     refs.cards.addEventListener("click", flipCard);
   }
 };
 
 window.onload = () => {
+  templatesInit();
   themeInit();
-  flipCrdInit();
+  flipCardInit();
 };
