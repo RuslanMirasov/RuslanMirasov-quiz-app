@@ -10,7 +10,12 @@
   </head>
   <body class="body" data-theme>
     <!--============ HEADER =============-->
-    <link rel="import" href="./templates/header.html" />
+    <header class="header" data-import>
+      <a href="./" class="logo">
+        <svg><use href="./assets/img/icons.svg#logo"></use></svg>
+        <p class="logo__title">Quiz App</p>
+      </a>
+    </header>
 
     <!--============ MAIN =============-->
     <main class="main">
@@ -41,11 +46,11 @@
             <section class="profile__content">
               <ul class="profile__counter">
                 <li>
-                  <i class="fa-solid fa-circle-question"></i>
+                  <svg><use href="./assets/img/icons.svg#questions"></use></svg>
                   <span>14</span>
                 </li>
                 <li>
-                  <i class="fa-solid fa-bookmark"></i>
+                  <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
                   <span>2</span>
                 </li>
               </ul>
@@ -75,12 +80,45 @@
     </main>
 
     <!--============ FOOTER =============-->
-    <link rel="import" href="./templates/footer.html" />
+    <footer class="footer" data-import>
+      <svg class="footer__corner footer__corner--left">
+        <use href="./assets/img/icons.svg#cornerLeft"></use>
+      </svg>
+      <svg class="footer__corner footer__corner--right">
+        <use href="./assets/img/icons.svg#cornerRight"></use>
+      </svg>
+      <div class="container">
+        <nav class="navigation">
+          <menu class="navigation__menu">
+            <li class="navigation__item">
+              <a href="./" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#home"></use></svg>
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./bookmarks.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
+                Bookmarks
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./form.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#add"></use></svg>
+                Add question
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./profile.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#profile"></use></svg>
+                Profile
+              </a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </footer>
 
-    <script
-      src="https://kit.fontawesome.com/ea42877e43.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="./assets/js/scripts.js" type="module"></script>
   </body>
 </html>

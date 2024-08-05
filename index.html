@@ -10,7 +10,12 @@
   </head>
   <body class="body" data-theme>
     <!--============ HEADER =============-->
-    <link rel="import" href="./templates/header.html" />
+    <header class="header" data-import>
+      <a href="./" class="logo">
+        <svg><use href="./assets/img/icons.svg#logo"></use></svg>
+        <p class="logo__title">Quiz App</p>
+      </a>
+    </header>
 
     <!--============ MAIN =============-->
     <main class="main">
@@ -18,14 +23,16 @@
         <div class="container">
           <h1 class="headline">Quiz questions</h1>
 
-          <!--=== Cards ===-->
+          <!--=== CARDS ===-->
           <ul class="cards">
             <!--=== Card 1 ===-->
             <li class="card">
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark add-to-bookmark--active">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I list the contents of a directory?
@@ -53,7 +60,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I change to the root directory?
@@ -81,7 +90,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I change to my home directory?
@@ -109,7 +120,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I change to the parent directory?
@@ -137,7 +150,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I change to the previous directory?
@@ -165,7 +180,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark add-to-bookmark--active">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I create a new directory?
@@ -193,7 +210,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">How do I remove a file?</h2>
                   <button class="button js-card-show">
@@ -219,7 +238,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I remove an empty directory?
@@ -247,7 +268,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">Remove an not empty directory</h2>
                   <button class="button js-card-show">
@@ -273,7 +296,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I view the contents of a file?
@@ -301,7 +326,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I rename or move a file?
@@ -329,7 +356,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">How do I copy a file?</h2>
                   <button class="button js-card-show">
@@ -357,7 +386,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I print the current working directory?
@@ -385,7 +416,9 @@
               <article class="flip">
                 <div class="flip__front">
                   <button class="add-to-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>
+                    <svg>
+                      <use href="./assets/img/icons.svg#bookmark"></use>
+                    </svg>
                   </button>
                   <h2 class="card__question">
                     How do I create a new empty file?
@@ -413,12 +446,45 @@
     </main>
 
     <!--============ FOOTER =============-->
-    <link rel="import" href="./templates/footer.html" />
+    <footer class="footer" data-import>
+      <svg class="footer__corner footer__corner--left">
+        <use href="./assets/img/icons.svg#cornerLeft"></use>
+      </svg>
+      <svg class="footer__corner footer__corner--right">
+        <use href="./assets/img/icons.svg#cornerRight"></use>
+      </svg>
+      <div class="container">
+        <nav class="navigation">
+          <menu class="navigation__menu">
+            <li class="navigation__item">
+              <a href="./" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#home"></use></svg>
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./bookmarks.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
+                Bookmarks
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./form.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#add"></use></svg>
+                Add question
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./profile.html" class="js-nav-link">
+                <svg><use href="./assets/img/icons.svg#profile"></use></svg>
+                Profile
+              </a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </footer>
 
-    <script
-      src="https://kit.fontawesome.com/ea42877e43.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/scripts.js" type="module"></script>
+    <script src="./assets/js/scripts.js" type="module" defer></script>
   </body>
 </html>

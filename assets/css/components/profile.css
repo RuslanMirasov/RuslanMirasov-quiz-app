@@ -25,7 +25,7 @@
   border: 1px solid var(--white);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease-out, border 0.3s ease-out;
 }
 
@@ -60,15 +60,20 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  gap: 30px;
+  gap: 40px;
   font-size: 1.5rem;
   color: var(--color);
 }
 
 .profile__counter li {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
+}
+
+.profile__counter li svg {
+  width: 24px;
+  height: 24px;
 }
 
 .profile__counter span {

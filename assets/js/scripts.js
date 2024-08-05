@@ -1,22 +1,29 @@
 const refs = {
   body: document.querySelector(".body"),
-  templates: document.querySelectorAll("link[rel=import]"),
+  navLinks: document.querySelectorAll(".js-nav-link"),
   themeSwitcher: document.querySelector("#theme-switcher"),
   cards: document.querySelector(".cards"),
 };
 
-const templatesInit = () => {
-  refs.templates.forEach((template) => {
-    const templateHref = template.getAttribute("href");
-    if (templateHref) {
-      fetch(templateHref)
-        .then((response) => response.text())
-        .then((data) => refs.body.insertAdjacentHTML("beforeend", data))
-        .catch((error) => console.error("Error loading template:", error));
+// Set active link to menu
+const setActiveMenuLink = () => {
+  const pageUrl = window.location.href.split("/").pop();
+
+  if (!pageUrl) {
+    refs.navLinks[0].parentNode.classList.add("active");
+    return;
+  }
+
+  refs.navLinks.forEach((link) => {
+    const linkHref = link.href;
+    if (linkHref.includes(pageUrl)) {
+      link.parentNode.classList.add("active");
+      return;
     }
   });
 };
 
+// Theme switcher functions
 const switchThema = (e) => {
   const newTheme = e.target.checked ? "dark" : "light";
   refs.body.dataset.theme = newTheme;
@@ -34,11 +41,22 @@ const themeInit = () => {
   }
 };
 
+// Flip cards functions
 const flipCard = (e) => {
   const target = e.target;
-  if (!target.classList.contains("button")) {
+
+  if (
+    !target.classList.contains("button") &&
+    !target.classList.contains("add-to-bookmark")
+  )
+    return;
+
+  console.log(target);
+  if (target.classList.contains("add-to-bookmark")) {
+    target.classList.toggle("add-to-bookmark--active");
     return;
   }
+
   const card = target.closest(".card");
   if (target.classList.contains("js-card-show")) {
     card.classList.add("active");
@@ -53,8 +71,6 @@ const flipCardInit = () => {
   }
 };
 
-window.onload = () => {
-  templatesInit();
-  themeInit();
-  flipCardInit();
-};
+themeInit();
+setActiveMenuLink();
+flipCardInit();
