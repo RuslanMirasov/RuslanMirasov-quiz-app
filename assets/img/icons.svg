@@ -6,16 +6,9 @@
       <path d="M18.45,18.89l.55-.27V13.17l-7,3.11L5,13.17v5.45l.55.27a14.45,14.45,0,0,0,12.9,0Z"/>
    </symbol>
 
-   <!-- right corner -->
-   <symbol viewBox="0 0 50 50" fill="none" id="cornerRight">
-      <rect width="50" height="50" fill="var(--black)"/>
-      <path d="M0 0H50V0C50 27.6142 27.6142 50 0 50V50V0Z" fill="currentColor"/>
-   </symbol>
-
-   <!-- left corner -->
-   <symbol viewBox="0 0 50 50" fill="none" id="cornerLeft">
-      <rect width="50" height="50" fill="var(--black)"/>
-      <path d="M0 0H50V50V50C22.3858 50 0 27.6142 0 0V0Z" fill="currentColor"/>
+   <!-- corner -->
+   <symbol viewBox="0 0 50 50" fill="none" id="corner">
+      <path d="M0 0V0C0.843013 27.2574 22.7426 49.157 50 50V50H0V0Z" fill="currentColor"/>
    </symbol>
 
    <!-- home -->

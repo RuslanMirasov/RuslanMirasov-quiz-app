@@ -7,11 +7,11 @@
   align-content: center;
   min-height: 40px;
   color: var(--white);
-  background: var(--black);
-  border-radius: 30px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 8px 20px;
+  background: var(--header-bg);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 14px 30px;
   transition: color 0.3s ease-out;
 }
 
@@ -32,7 +32,6 @@
   border-radius: 500px;
   left: 50%;
   top: 50%;
-  opacity: 0.5;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -41,6 +40,5 @@
 }
 
 .button:hover:before {
-  opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }

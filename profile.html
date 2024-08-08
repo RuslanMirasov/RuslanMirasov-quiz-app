@@ -11,10 +11,16 @@
   <body class="body" data-thema>
     <!--============ HEADER =============-->
     <header class="header" data-import>
+      <svg class="corner corner--lt">
+        <use href="./assets/img/icons.svg#corner"></use>
+      </svg>
       <a href="./" class="logo">
         <svg><use href="./assets/img/icons.svg#logo"></use></svg>
         <p class="logo__title">Quiz App</p>
       </a>
+      <svg class="corner corner--rt">
+        <use href="./assets/img/icons.svg#corner"></use>
+      </svg>
     </header>
 
     <!--============ MAIN =============-->
@@ -81,42 +87,40 @@
 
     <!--============ FOOTER =============-->
     <footer class="footer" data-import>
-      <svg class="footer__corner footer__corner--left">
-        <use href="./assets/img/icons.svg#cornerLeft"></use>
+      <svg class="corner corner--lt">
+        <use href="./assets/img/icons.svg#corner"></use>
       </svg>
-      <svg class="footer__corner footer__corner--right">
-        <use href="./assets/img/icons.svg#cornerRight"></use>
+      <nav class="navigation">
+        <menu class="navigation__menu">
+          <li class="navigation__item">
+            <a href="./">
+              <svg><use href="./assets/img/icons.svg#home"></use></svg>
+              Home
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="./bookmarks.html">
+              <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
+              Bookmarks
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="./form.html">
+              <svg><use href="./assets/img/icons.svg#add"></use></svg>
+              Add question
+            </a>
+          </li>
+          <li class="navigation__item active">
+            <a href="./profile.html">
+              <svg><use href="./assets/img/icons.svg#profile"></use></svg>
+              Profile
+            </a>
+          </li>
+        </menu>
+      </nav>
+      <svg class="corner corner--rt">
+        <use href="./assets/img/icons.svg#corner"></use>
       </svg>
-      <div class="container">
-        <nav class="navigation">
-          <menu class="navigation__menu">
-            <li class="navigation__item">
-              <a href="./">
-                <svg><use href="./assets/img/icons.svg#home"></use></svg>
-                Home
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./bookmarks.html">
-                <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
-                Bookmarks
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./form.html">
-                <svg><use href="./assets/img/icons.svg#add"></use></svg>
-                Add question
-              </a>
-            </li>
-            <li class="navigation__item active">
-              <a href="./profile.html">
-                <svg><use href="./assets/img/icons.svg#profile"></use></svg>
-                Profile
-              </a>
-            </li>
-          </menu>
-        </nav>
-      </div>
     </footer>
 
     <script src="./assets/js/scripts.js" type="module"></script>

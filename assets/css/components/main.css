@@ -1,17 +1,22 @@
 .main {
   display: block;
   position: relative;
-  max-width: 1200px;
+  max-width: 420px;
   width: 100%;
   height: auto;
-  margin: 60px auto;
-  padding: 0px 20px;
-  background: var(--background);
+  margin: 0 auto;
+  padding: 60px 20px;
   z-index: 10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .main {
-    padding: 70px 0px 70px 0px;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    max-width: 1200px;
   }
 }

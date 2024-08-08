@@ -32,8 +32,8 @@
 }
 
 .checkbox input:checked + label {
-  background: var(--color);
-  border: 1px solid var(--color);
+  background: var(--header-bg);
+  border: 1px solid var(--header-bg);
 }
 
 .checkbox input:checked + label:before {

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .card {
@@ -49,7 +49,7 @@
   flex-wrap: wrap;
   gap: 20px;
   border-radius: 20px;
-  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 34px 10px -30px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease-out;
 }
 
@@ -114,17 +114,29 @@
   pointer-events: none;
 }
 
-.add-to-bookmark.active,
-.add-to-bookmark:hover {
-  color: var(--color);
+@media (hover: hover) and (pointer: fine) {
+  .add-to-bookmark.active,
+  .add-to-bookmark:hover {
+    color: var(--color);
+  }
+
+  .add-to-bookmark:hover:before {
+    background: var(--color);
+  }
+
+  .add-to-bookmark.active:before {
+    opacity: 0;
+  }
 }
 
-.add-to-bookmark:hover:before {
-  background: var(--color);
-}
+@media (hover: none) and (pointer: coarse) {
+  .add-to-bookmark.active {
+    color: var(--color);
+  }
 
-.add-to-bookmark.active:before {
-  opacity: 0;
+  .add-to-bookmark.active:before {
+    opacity: 0;
+  }
 }
 
 /*typography*/
@@ -144,15 +156,15 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  background: var(--color);
   border-radius: 15px;
   flex-grow: 1;
   position: relative;
   overflow: hidden;
   text-align: center;
   font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--black);
   padding: 20px;
 }
 
@@ -164,12 +176,12 @@
   left: 0px;
   top: 0px;
   background: linear-gradient(
-    326deg,
+    340deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0) 48%,
     rgba(0, 0, 0, 1) 100%
   );
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 /*Categories list*/

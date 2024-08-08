@@ -3,45 +3,17 @@
   color: var(--white);
 }
 
+.body[data-thema="dark"] .profile__foto {
+  border: 4px solid #d1d1d1;
+}
+
 .body[data-thema="dark"] .profile__content {
   background: var(--background-card-dark-thema);
-  border: 1px solid var(--grey-dark-thema);
 }
 
-.body[data-thema="dark"] .profile .headline--h2 {
-  border-bottom: 1px solid var(--grey-dark-thema);
-}
-
-.body[data-thema="dark"] .profile p {
-  opacity: 0.6;
-}
-
-.body[data-thema="dark"] .profile__counter {
-  color: var(--white);
-}
-
-.body[data-thema="dark"] .profile__counter span {
-  color: var(--white);
-  opacity: 0.6;
-}
-
+.body[data-thema="dark"] .profile__content,
 .body[data-thema="dark"] .flip__front,
 .body[data-thema="dark"] .flip__back {
   background: var(--background-card-dark-thema);
-  border: 1px solid var(--grey-dark-thema);
-}
-
-.body[data-thema="dark"] .button {
   color: var(--black);
-  background: var(--white);
-}
-
-.body[data-thema="dark"] .button:hover {
-  color: var(--white);
-}
-
-.body[data-thema="dark"] .categories li {
-  color: var(--white);
-  border: 1px solid var(--color);
-  background: var(--color);
 }

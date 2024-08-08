@@ -11,478 +11,476 @@
   <body class="body" data-thema>
     <!--============ HEADER =============-->
     <header class="header" data-import>
+      <svg class="corner corner--lt">
+        <use href="./assets/img/icons.svg#corner"></use>
+      </svg>
       <a href="./" class="logo">
         <svg><use href="./assets/img/icons.svg#logo"></use></svg>
         <p class="logo__title">Quiz App</p>
       </a>
+      <svg class="corner corner--rt">
+        <use href="./assets/img/icons.svg#corner"></use>
+      </svg>
     </header>
 
     <!--============ MAIN =============-->
     <main class="main">
       <section class="section">
-        <div class="container">
-          <h1 class="headline">Quiz questions</h1>
+        <h1 class="headline">Quiz questions</h1>
 
-          <!--=== CARDS ===-->
-          <ul class="cards js-cards">
-            <!--=== Card 1 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I list the contents of a directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">ls</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+        <!--=== CARDS ===-->
+        <ul class="cards js-cards">
+          <!--=== Card 1 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark active">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I list the contents of a directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">ls</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 2 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I change to the root directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">cd /</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 2 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I change to the root directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">cd /</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 3 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I change to my home directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">cd ~</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 3 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I change to my home directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">cd ~</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 4 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I change to the parent directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">cd ..</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 4 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I change to the parent directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">cd ..</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 5 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I change to the previous directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">cd -</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 5 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I change to the previous directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">cd -</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 6 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I create a new directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">mkdir &lt;FolderName&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 6 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark active">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">How do I create a new directory?</h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">mkdir &lt;FolderName&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 7 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">How do I remove a file?</h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">rm &lt;file&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 7 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">How do I remove a file?</h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">rm &lt;file&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 8 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I remove an empty directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">rmdir &lt;directory&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 8 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I remove an empty directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">rmdir &lt;directory&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 9 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">Remove an not empty directory</h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">rm -rf &lt;directory&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 9 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">Remove an not empty directory</h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">rm -rf &lt;directory&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 10 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I view the contents of a file?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">cat &lt;filename&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 10 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I view the contents of a file?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">cat &lt;filename&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 11 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I rename or move a file?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">mv &lt;oldName&gt; &lt;newName&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 11 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">How do I rename or move a file?</h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">mv &lt;oldName&gt; &lt;newName&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 12 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">How do I copy a file?</h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">
-                    cp &lt;example.txt&gt; &lt;folder&gt;
-                  </p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 12 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark active">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">How do I copy a file?</h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">
+                  cp &lt;example.txt&gt; &lt;folder&gt;
+                </p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 13 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I print the current working directory?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">pwd</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
+          <!--=== Card 13 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark active">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I print the current working directory?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">pwd</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
 
-            <!--=== Card 14 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I create a new empty file?
-                  </h2>
-                  <button class="button js-card-show">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">touch &lt;filename.txt&gt;</p>
-                  <button class="button js-card-hide">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
+          <!--=== Card 14 ===-->
+          <li class="card">
+            <article class="flip">
+              <div class="flip__front">
+                <button class="add-to-bookmark active">
+                  <svg>
+                    <use href="./assets/img/icons.svg#bookmark"></use>
+                  </svg>
+                </button>
+                <h2 class="card__question">
+                  How do I create a new empty file?
+                </h2>
+                <button class="button">
+                  <span>Show Answer</span>
+                </button>
+                <ul class="categories">
+                  <li>WSL</li>
+                  <li>Terminal</li>
+                  <li>Commands</li>
+                </ul>
+              </div>
+              <div class="flip__back">
+                <p class="card__answer">touch &lt;filename.txt&gt;</p>
+                <button class="button">
+                  <span>Hide Answer</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
 
     <!--============ FOOTER =============-->
     <footer class="footer" data-import>
-      <svg class="footer__corner footer__corner--left">
-        <use href="./assets/img/icons.svg#cornerLeft"></use>
+      <svg class="corner corner--lt">
+        <use href="./assets/img/icons.svg#corner"></use>
       </svg>
-      <svg class="footer__corner footer__corner--right">
-        <use href="./assets/img/icons.svg#cornerRight"></use>
+      <nav class="navigation">
+        <menu class="navigation__menu">
+          <li class="navigation__item active">
+            <a href="./">
+              <svg><use href="./assets/img/icons.svg#home"></use></svg>
+              Home
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="./bookmarks.html">
+              <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
+              Bookmarks
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="./form.html">
+              <svg><use href="./assets/img/icons.svg#add"></use></svg>
+              Add question
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="./profile.html">
+              <svg><use href="./assets/img/icons.svg#profile"></use></svg>
+              Profile
+            </a>
+          </li>
+        </menu>
+      </nav>
+      <svg class="corner corner--rt">
+        <use href="./assets/img/icons.svg#corner"></use>
       </svg>
-      <div class="container">
-        <nav class="navigation">
-          <menu class="navigation__menu">
-            <li class="navigation__item active">
-              <a href="./">
-                <svg><use href="./assets/img/icons.svg#home"></use></svg>
-                Home
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./bookmarks.html">
-                <svg><use href="./assets/img/icons.svg#bookmark"></use></svg>
-                Bookmarks
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./form.html">
-                <svg><use href="./assets/img/icons.svg#add"></use></svg>
-                Add question
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./profile.html">
-                <svg><use href="./assets/img/icons.svg#profile"></use></svg>
-                Profile
-              </a>
-            </li>
-          </menu>
-        </nav>
-      </div>
     </footer>
 
     <script src="./assets/js/scripts.js" type="module" defer></script>

@@ -29,7 +29,6 @@
   font-size: 0.7rem;
   line-height: 1;
   text-align: center;
-  background: var(--black);
   color: var(--white);
   transition: 0.3s;
 }
@@ -43,5 +42,25 @@
 .navigation__item.active a svg,
 .navigation__item a:hover svg,
 .navigation__item a:focus svg {
-  color: var(--color);
+  color: var(--color-light);
+}
+
+@media (min-width: 768px) {
+  .navigation__menu {
+    justify-content: space-evenly;
+  }
+
+  .navigation__item {
+    width: auto;
+  }
+  .navigation__item a {
+    flex-direction: row;
+    width: auto;
+    gap: 8px;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--white);
+    transition: 0.3s;
+  }
 }
