@@ -73,6 +73,7 @@
   position: relative;
   overflow: hidden;
   margin: 20px 0px;
+  transition: 0.3s;
 }
 
 .info li {
@@ -82,6 +83,10 @@
   color: var(--white);
   font-size: 0.8rem;
   border-radius: 8px;
+}
+
+.info li b {
+  text-transform: uppercase;
 }
 
 .info li:last-child {

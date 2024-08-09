@@ -29,7 +29,7 @@
         <div class="container">
           <h1 class="headline headline--center">Add new question</h1>
 
-          <form data-js="form" class="form">
+          <form class="form" data-js="form">
             <label class="label">
               <b>Your question:</b>
               <textarea
@@ -37,6 +37,7 @@
                 class="input input--area"
                 minlength="0"
                 maxlength="150"
+                data-js="textarea"
               ></textarea>
               <p class="counter">
                 <span data-js="counter">150</span> characters left
@@ -46,9 +47,10 @@
               <b>Your answer:</b>
               <textarea
                 name="answer"
-                class="input input--area invalid"
+                class="input input--area"
                 minlength="0"
                 maxlength="150"
+                data-js="textarea"
               ></textarea>
               <p class="counter">
                 <span data-js="counter">150</span> characters left
@@ -59,10 +61,10 @@
               <input type="text" name="tag" class="input" />
             </label>
             <ul class="info" data-js="info" data-status="confirm">
-              <li>&#128077; A new card has bin added!</li>
+              <!-- <li>&#128077; A new card has bin added!</li>
               <li>The <b>question</b> field is required!</li>
               <li>The <b>answer</b> field is required!</li>
-              <li>The <b>tag</b> field is required!</li>
+              <li>The <b>tag</b> field is required!</li> -->
             </ul>
             <button type="submit" class="button button--green">
               <span>Submit</span>
@@ -70,127 +72,7 @@
           </form>
 
           <!--=== Cards ===-->
-          <ul class="cards js-cards">
-            <!--=== Card 1 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I list the contents of a directory?
-                  </h2>
-                  <button class="button">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">ls</p>
-                  <button class="button">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-
-            <!--=== Card 6 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I create a new directory?
-                  </h2>
-                  <button class="button">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">mkdir &lt;FolderName&gt;</p>
-                  <button class="button">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-
-            <!--=== Card 12 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">How do I copy a file?</h2>
-                  <button class="button">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">
-                    cp &lt;example.txt&gt; &lt;folder&gt;
-                  </p>
-                  <button class="button">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-
-            <!--=== Card 13 ===-->
-            <li class="card">
-              <article class="flip">
-                <div class="flip__front">
-                  <button class="add-to-bookmark active">
-                    <svg>
-                      <use href="./assets/img/icons.svg#bookmark"></use>
-                    </svg>
-                  </button>
-                  <h2 class="card__question">
-                    How do I print the current working directory?
-                  </h2>
-                  <button class="button">
-                    <span>Show Answer</span>
-                  </button>
-                  <ul class="categories">
-                    <li>WSL</li>
-                    <li>Terminal</li>
-                    <li>Commands</li>
-                  </ul>
-                </div>
-                <div class="flip__back">
-                  <p class="card__answer">pwd</p>
-                  <button class="button">
-                    <span>Hide Answer</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <ul class="cards js-cards"></ul>
         </div>
       </section>
     </main>
@@ -233,6 +115,7 @@
       </svg>
     </footer>
 
-    <script src="./assets/js/scripts.js" type="module"></script>
+    <script src="./assets/js/addCard.js" type="module" defer></script>
+    <script src="./assets/js/scripts.js" type="module" defer></script>
   </body>
 </html>
