@@ -17,3 +17,7 @@
   background: var(--background-card-dark-thema);
   color: var(--black);
 }
+
+.body[data-thema="dark"] .label b {
+  color: var(--white);
+}

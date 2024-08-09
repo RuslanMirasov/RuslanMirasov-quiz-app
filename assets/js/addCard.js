@@ -3,6 +3,7 @@ const form = document.querySelector('[data-js="form"]');
 const cards = document.querySelector(".js-cards");
 const infoEl = document.querySelector('[data-js="info"]');
 
+// Change counter of characters in textareas
 const countCharacters = (e) => {
   const max = 150;
   const textarea = e.target;
@@ -16,21 +17,20 @@ const countCharacters = (e) => {
   }
 };
 
+// Remove "invalid" class from inputs in focus and hide a errors masseges
 const handleInputFocus = (e) => {
   const input = e.target;
   input.classList.remove("invalid");
   infoEl.style.height = "0px";
 };
 
+// adding listeners on inputs
 for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener("input", countCharacters);
   inputs[i].addEventListener("focus", handleInputFocus);
 }
 
-const showInfoContainer = () => {
-  infoEl.style.height = infoEl.scrollHeight + "px";
-};
-
+// Toast messages
 const showConfirmMassege = () => {
   infoEl.setAttribute("data-status", "confirm");
   infoEl.innerHTML += `<li>&#128077; A new card has bin added!</li>`;
@@ -43,23 +43,34 @@ const showErrors = (error) => {
   infoEl.style.height = infoEl.scrollHeight + "px";
 };
 
+// Custom form validation
 const formValidation = (form) => {
   let checker = true;
-
   const data = form.elements;
 
   for (let i = 0; i < data.length; i += 1) {
     const isInput = data[i].classList.contains("input");
     if (isInput && !data[i].value) {
-      checker = false;
-      showErrors(`<li><b>${data[i].name}</b> field is required</li>`);
       data[i].classList.add("invalid");
+      showErrors(`<li><b>${data[i].name}</b> field is required</li>`);
+      checker = false;
     }
   }
 
   return checker;
 };
 
+// Collect all tags from input
+const getAllTags = (tags) => {
+  let result = "";
+  const tagsList = tags.replace(/\s+/g, " ").trim().split(" ");
+  for (let i = 0; i < tagsList.length; i += 1) {
+    result += `<li>${tagsList[i]}</li>`;
+  }
+  return result;
+};
+
+// Add new card
 const addNewCard = (e) => {
   e.preventDefault();
   infoEl.innerHTML = "";
@@ -73,6 +84,7 @@ const addNewCard = (e) => {
 
   const data = new FormData(form);
   const formData = Object.fromEntries(data);
+  const tags = getAllTags(formData.tag);
   const cardMarkup = `
             <li class="card">
               <article class="flip">
@@ -87,7 +99,7 @@ const addNewCard = (e) => {
                     <span>Show Answer</span>
                   </button>
                   <ul class="categories">
-                    <li>${formData.tag}</li>
+                    ${tags}
                   </ul>
                 </div>
                 <div class="flip__back">

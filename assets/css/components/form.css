@@ -17,8 +17,10 @@
 }
 
 .label b {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--header-bg);
+  transition: 0.3s;
 }
 
 .label p {
@@ -41,19 +43,24 @@
   background: var(--white);
   outline: none;
   padding: 14px 20px;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--black);
   transition: border 0.3s;
 }
 
-.input.invalid {
-  border: 2px solid var(--invalid);
+.input:hover {
+  border: 2px solid var(--color);
 }
 
 .input:focus {
   border: 2px solid var(--header-bg);
+}
+
+.input.invalid {
+  border: 2px solid var(--invalid);
 }
 
 .input.input--area {

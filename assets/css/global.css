@@ -10,7 +10,7 @@
   --grey-light: #bdbdbd;
 
   --header-bg: #465d84;
-  --invalid: #ff0000;
+  --invalid: #c4412a;
 
   /*dark thema*/
   --background-dark-thema: #333d4d;
@@ -41,6 +41,9 @@
   font-style: normal;
   font-size: 16px;
   line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ul,
