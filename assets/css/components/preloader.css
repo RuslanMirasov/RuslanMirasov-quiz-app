@@ -8,6 +8,7 @@
   height: 100vh;
   position: fixed;
   background: var(--background-dark-thema);
+  background: var(--background);
   z-index: 19;
   left: 0px;
   top: 0px;
@@ -28,8 +29,8 @@
   content: "";
   position: absolute;
   border-radius: 40px;
-  border-left: 3px solid var(--color-light);
-  border-top: 3px solid var(--color-light);
+  border-left: 3px solid var(--header-bg);
+  border-top: 3px solid var(--header-bg);
   border-right: 3px solid rgba(0, 0, 0, 0);
   border-bottom: 3px solid rgba(0, 0, 0, 0);
 }

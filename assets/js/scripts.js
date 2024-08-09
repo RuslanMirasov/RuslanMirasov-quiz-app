@@ -1,3 +1,5 @@
+const preloader = document.querySelector(".preloader");
+const main = document.querySelector(".main");
 const themaSwitcherEl = document.querySelector("#thema-switcher");
 const cardsEl = document.querySelector(".js-cards");
 
@@ -35,6 +37,13 @@ if (themaSwitcherEl) {
 
 const init = () => {
   themaInit();
+
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 100);
+  setTimeout(() => {
+    main.classList.add("visible");
+  }, 200);
 };
 
 init();
