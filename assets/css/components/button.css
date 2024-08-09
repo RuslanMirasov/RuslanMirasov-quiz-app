@@ -35,10 +35,26 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
-.button:hover {
-  color: var(--white);
+.button.button--green {
+  background: var(--color);
 }
 
-.button:hover:before {
-  transform: translate(-50%, -50%) scale(1);
+.button.button--green:before {
+  background: var(--header-bg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    color: var(--white);
+  }
+
+  .button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media (max-width: 420px) {
+  .button.button--green {
+    width: 100%;
+  }
 }

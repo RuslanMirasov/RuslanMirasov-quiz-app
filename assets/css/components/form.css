@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  width: 100%;
+  max-width: 520px;
+  margin: 20px auto 50px auto;
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.label b {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.label p {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid var(--white);
+  background: var(--white);
+  outline: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--black);
+  transition: border 0.3s;
+}
+
+.input.invalid {
+  border: 2px solid var(--invalid);
+}
+
+.input:focus {
+  border: 2px solid var(--header-bg);
+}
+
+.input.input--area {
+  resize: none;
+  height: 134px;
+}
+
+.form .button {
+  min-width: 180px;
+  margin: 0 auto;
+}
+
+.info {
+  display: block;
+  width: auto;
+  height: 0px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+
+.info li {
+  padding: 6px 10px;
+  margin-bottom: 10px;
+
+  color: var(--white);
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+
+.info li:last-child {
+  margin-bottom: 0px;
+}
+
+.info[data-status="error"] li {
+  background: var(--invalid);
+}
+
+.info[data-status="confirm"] li {
+  background: var(--color);
+}
