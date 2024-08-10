@@ -1,6 +1,6 @@
 .body[data-thema="dark"] {
   background: var(--background-dark-thema);
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .body[data-thema="dark"] .profile__foto {
@@ -15,19 +15,19 @@
 .body[data-thema="dark"] .flip__front,
 .body[data-thema="dark"] .flip__back {
   background: var(--background-card-dark-thema);
-  color: var(--black);
+  color: var(--black-color);
 }
 
 .body[data-thema="dark"] .label b {
-  color: var(--white);
+  color: var(--white-color);
 }
 
-/* .body[data-thema="dark"] .preloader {
+.body[data-thema="dark"] .preloader {
   background: var(--background-dark-thema);
 }
 
 .body[data-thema="dark"] .preloader:before,
 .body[data-thema="dark"] .preloader:after {
-  border-left: 3px solid var(--color-light);
-  border-top: 3px solid var(--color-light);
-} */
+  border-left: 3px solid var(--green-light-color);
+  border-top: 3px solid var(--green-light-color);
+}

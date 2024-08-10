@@ -52,7 +52,7 @@ const formValidation = (form) => {
     const isInput = data[i].classList.contains("input");
     if (isInput && !data[i].value) {
       data[i].classList.add("invalid");
-      showErrors(`<li><b>${data[i].name}</b> field is required</li>`);
+      showErrors(`<li>&#10006; <b>${data[i].name}</b> field is required</li>`);
       checker = false;
     }
   }

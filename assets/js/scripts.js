@@ -17,6 +17,8 @@ const themaInit = () => {
   }
 };
 
+themaInit();
+
 const handleCardsClick = (e) => {
   const target = e.target;
 
@@ -35,15 +37,15 @@ if (themaSwitcherEl) {
   themaSwitcherEl.addEventListener("change", changeThema);
 }
 
-const init = () => {
-  themaInit();
-
-  setTimeout(() => {
-    preloader.classList.add("hidden");
-  }, 100);
+const hidePreloader = () => {
+  preloader.classList.add("hidden");
   setTimeout(() => {
     main.classList.add("visible");
-  }, 200);
+  }, 300);
 };
 
-init();
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    hidePreloader();
+  }, 250);
+});

@@ -19,7 +19,7 @@
 .label b {
   font-size: 20px;
   font-weight: 800;
-  color: var(--header-bg);
+  color: var(--blue-color);
   transition: 0.3s;
 }
 
@@ -39,24 +39,24 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 2px solid var(--white);
-  background: var(--white);
+  border: 2px solid var(--white-color);
+  background: var(--white-color);
   outline: none;
   padding: 14px 20px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   line-height: 1.4;
   font-weight: 700;
-  color: var(--black);
+  color: var(--black-color);
   transition: border 0.3s;
 }
 
 .input:hover {
-  border: 2px solid var(--color);
+  border: 2px solid var(--green-color);
 }
 
 .input:focus {
-  border: 2px solid var(--header-bg);
+  border: 2px solid var(--blue-color);
 }
 
 .input.invalid {
@@ -85,15 +85,17 @@
 
 .info li {
   padding: 6px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
-  color: var(--white);
+  color: var(--white-color);
   font-size: 0.8rem;
   border-radius: 8px;
 }
 
 .info li b {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .info li:last-child {
@@ -105,5 +107,5 @@
 }
 
 .info[data-status="confirm"] li {
-  background: var(--color);
+  background: var(--green-color);
 }

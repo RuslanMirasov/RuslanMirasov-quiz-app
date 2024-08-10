@@ -29,7 +29,7 @@
   font-size: 0.7rem;
   line-height: 1;
   text-align: center;
-  color: var(--white);
+  color: var(--white-color);
   transition: 0.3s;
 }
 
@@ -42,7 +42,7 @@
 .navigation__item.active a svg,
 .navigation__item a:hover svg,
 .navigation__item a:focus svg {
-  color: var(--color-light);
+  color: var(--green-light-color);
 }
 
 @media (min-width: 768px) {
@@ -60,7 +60,7 @@
     font-size: 1.2rem;
     line-height: 1;
     text-align: center;
-    color: var(--white);
+    color: var(--white-color);
     transition: 0.3s;
   }
 }

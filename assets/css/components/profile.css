@@ -21,8 +21,8 @@
 }
 
 .profile__content {
-  background: var(--white);
-  border: 1px solid var(--white);
+  background: var(--white-color);
+  border: 1px solid var(--white-color);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 34px 10px -30px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
 .profile .headline--h2 {
   padding-bottom: 10px;
   margin-bottom: 14px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey-color);
   transition: border-bottom 0.3s ease-out;
 }
 
@@ -62,7 +62,7 @@
   width: 100%;
   gap: 40px;
   font-size: 1.5rem;
-  color: var(--color);
+  color: var(--green-color);
 }
 
 .profile__counter li {
@@ -80,7 +80,7 @@
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--black-color);
 }
 
 /*settings*/
