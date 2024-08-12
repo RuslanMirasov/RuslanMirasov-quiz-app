@@ -10,10 +10,20 @@ const countCharacters = (e) => {
   const counterEl = textarea
     .closest("label")
     .querySelector('[data-js="counter"]');
+  const counterWrapperEl = textarea
+    .closest("label")
+    .querySelector('[data-js="counter-wrapper"]');
   if (counterEl) {
     const inputSymbols = textarea.value.length;
     const symbolsLeft = max - Number(inputSymbols);
     counterEl.innerHTML = symbolsLeft;
+    if (symbolsLeft === 0) {
+      counterWrapperEl.style.color = "var(--invalid)";
+      counterWrapperEl.style.opacity = "1";
+    } else {
+      counterWrapperEl.style.color = "inherit";
+      counterWrapperEl.style.opacity = "0.6";
+    }
   }
 };
 
@@ -56,7 +66,6 @@ const formValidation = (form) => {
       checker = false;
     }
   }
-
   return checker;
 };
 
