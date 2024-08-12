@@ -70,6 +70,15 @@ const getAllTags = (tags) => {
   return result;
 };
 
+//Form reset
+const formReset = (form) => {
+  const counters = form.querySelectorAll('[data-js="counter"]');
+  for (let i = 0; i < counters.length; i += 1) {
+    counters[i].innerHTML = "150";
+  }
+  form.reset();
+};
+
 // Add new card
 const addNewCard = (e) => {
   e.preventDefault();
@@ -113,7 +122,7 @@ const addNewCard = (e) => {
    `;
 
   cards.innerHTML += cardMarkup;
-  form.reset();
+  formReset(form);
   showConfirmMassege();
 };
 
